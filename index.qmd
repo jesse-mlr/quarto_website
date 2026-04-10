@@ -1,0 +1,42 @@
+---
+title: "Jesse Miller"
+image: "files/profile_pic.png"
+about:
+  template: solana
+  links:
+    - icon: envelope
+      href: mailto:jesse.miller@rady.ucsd.edu
+    - icon: linkedin
+      href: https://www.linkedin.com/in/jesse-miller11/
+
+format:
+  html:
+    page-layout: full
+
+---
+
+## Current
+
+ - MSBA Student [|]{.yellow} [UCSD Rady]{.altgreen}
+ - Rady Data Analytics Club, Marketing & Communications Director [|]{.yellow} [GBK Collective]{.altgreen}
+ - Capstone Consultant: Local Media San Diego [|]{.yellow} [UCLA Anderson]{.altgreen}
+ - Musician & Co-founder: Rain on Fridays
+
+-----
+
+## Work History
+
+ - Project Manager, The Banshee [|]{.yellow} [2024 - 2025]{.altgreen}
+ - Rain on Fridays LLC [|]{.yellow} [2020 - Present]{.altgreen}
+ - Music Director & Music Promotions Director, KCR College Radio [|]{.yellow} [2021 - 2023]{.altgreen}
+ - Business Operations Intern, Beth Am Early Childhood Center [|]{.yellow} [2021]{.altgreen}
+
+-----
+
+## Education
+
+ - M.S Business Analytics [|]{.yellow} [UC San Diego, Rady School of Management 2025-2026]{.altgreen}
+ - Bachelor of Art in Interdisciplinary Studies (Management Information Systems, Finance, Pyschology) [|]{.yellow} [San Diego State University 2019-2022]{.altgreen}
+ - Business Intelligence Analysis Professional Certificate [|]{.yellow} [UCSD Extended Studies]{.altgreen}
+
+:::

@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jesse Miller",
+    "section": "",
+    "text": "MSBA Student | UCSD Rady\nRady Data Analytics Club, Marketing & Communications Director | GBK Collective\nCapstone Consultant: Local Media San Diego | UCLA Anderson\nMusician & Co-founder: Rain on Fridays"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "My Resume",
+    "section": "",
+    "text": "Download PDF file."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "My Projects",
+    "section": "",
+    "text": "California Crime Dashboard\n\n\n\n\n\n\nYour Name\n\n\nApr 8, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/project1/index.html",
+    "href": "projects/project1/index.html",
+    "title": "California Crime Dashboard",
+    "section": "",
+    "text": "Let’s investigate the relationship between fuel efficiency (mpg) and engine displacement (disp) from the mtcars dataset. Those variables have a correlation of r cor(mtcars$mpg, mtcars$disp) |&gt; format(digits=2).\n\n\nHere is a plot:"
+  },
+  {
+    "objectID": "projects/project1/index.html#sub-header",
+    "href": "projects/project1/index.html#sub-header",
+    "title": "California Crime Dashboard",
+    "section": "",
+    "text": "Here is a plot:"
+  },
+  {
+    "objectID": "index.html#current",
+    "href": "index.html#current",
+    "title": "Jesse Miller",
+    "section": "",
+    "text": "MSBA Student | UCSD Rady\nRady Data Analytics Club, Marketing & Communications Director | GBK Collective\nCapstone Consultant: Local Media San Diego | UCLA Anderson\nMusician & Co-founder: Rain on Fridays"
+  },
+  {
+    "objectID": "index.html#work-history",
+    "href": "index.html#work-history",
+    "title": "Jesse Miller",
+    "section": "Work History",
+    "text": "Work History\n\nProject Manager, The Banshee | 2024 - 2025\nRain on Fridays LLC | 2020 - Present\nMusic Director & Music Promotions Director, KCR College Radio | 2021 - 2023\nBusiness Operations Intern, Beth Am Early Childhood Center | 2021"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Jesse Miller",
+    "section": "Education",
+    "text": "Education\n\nM.S Business Analytics | UC San Diego, Rady School of Management 2025-2026\nBachelor of Art in Interdisciplinary Studies (Management Information Systems, Finance, Pyschology) | San Diego State University 2019-2022\nBusiness Intelligence Analysis Professional Certificate | UCSD Extended Studies\n\n:::"
+  },
+  {
+    "objectID": "education.html",
+    "href": "education.html",
+    "title": "Education",
+    "section": "",
+    "text": "University of California, San Diego - Rady School of Management July 2025 – December 2026\nRelevant coursework - MGTA 455 - Customer Analytics & AI (Generative AI, Python, Cases on Customer Targeting, Statistical Modeling - Neural Networks, Logisistic Regression) - MGTA 453 - Business Analytics (Python, Linear Regression, Hypothesis Testing, Decision Analysis) - MGTA 452 - Collecting & Analyzing Large Data (Python, Automating Reporting & Using Quarto, Loading files, web scraping, API Calls, Regression) - MGTA 444 - Business Analytics Consulting - MGTA 466 - Scalable Analytics - MGTA 464 - SQL & ETL - MGTA 451 - Analytics in Marketing, Finance, & Operations\nProjects ### Capstone Project Local Media San Diego\n\n\nGithub Hosted Crime Analysis Interactive Web Dashboard. Final Project for MGTA 452 Class (Collecting/Analyzing Lrg Data) View Project Repo | Web Dashbord\n\n\n\nEngineered an ETL Pipeline using SQL & Python to create databases, schema, and tables using purchas order and invoice data. MGTA 464 Class (SQL & ETL)\n\n\n\n\n\nSan Diego State University 2019–2022\nDisciplines Management Information Systems, Psychology, Finance\nRelevant coursework - MIS: Systems Analysis, Data Management Systems, SAP ERP & SAP Analytics Cloud, - Finance: International Finance, Investments, Real Estate Finance - Psychology: Developmental Psychology, Neuroscience\nSelected projects ### Business Consulting Project Proposed an outsourced supply chain system to Pura Vida using gap analysis, SDLC, and data flow diagrams.\n\n\nCreated and analyzed database using SQL and created a dashboard using Python.\n\n\n\n\n\n**UC San Diego Extended Studies 01/2025-06/2025*\nRelevant coursework * Data Visualization & Business Intelligence (Tableau) * Coding in R * Advanced Excel * SQL"
+  },
+  {
+    "objectID": "education.html#master-of-science-in-business-analytics",
+    "href": "education.html#master-of-science-in-business-analytics",
+    "title": "Education",
+    "section": "",
+    "text": "University of California, San Diego - Rady School of Management July 2025 – December 2026\nRelevant coursework - MGTA 455 - Customer Analytics & AI (Generative AI, Python, Cases on Customer Targeting, Statistical Modeling - Neural Networks, Logisistic Regression) - MGTA 453 - Business Analytics (Python, Linear Regression, Hypothesis Testing, Decision Analysis) - MGTA 452 - Collecting & Analyzing Large Data (Python, Automating Reporting & Using Quarto, Loading files, web scraping, API Calls, Regression) - MGTA 444 - Business Analytics Consulting - MGTA 466 - Scalable Analytics - MGTA 464 - SQL & ETL - MGTA 451 - Analytics in Marketing, Finance, & Operations\nProjects ### Capstone Project Local Media San Diego\n\n\nGithub Hosted Crime Analysis Interactive Web Dashboard. Final Project for MGTA 452 Class (Collecting/Analyzing Lrg Data) View Project Repo | Web Dashbord\n\n\n\nEngineered an ETL Pipeline using SQL & Python to create databases, schema, and tables using purchas order and invoice data. MGTA 464 Class (SQL & ETL)"
+  },
+  {
+    "objectID": "education.html#bachelor-of-art-in-interdisciplinary-studies",
+    "href": "education.html#bachelor-of-art-in-interdisciplinary-studies",
+    "title": "Education",
+    "section": "",
+    "text": "San Diego State University 2019–2022\nDisciplines Management Information Systems, Psychology, Finance\nRelevant coursework - MIS: Systems Analysis, Data Management Systems, SAP ERP & SAP Analytics Cloud, - Finance: International Finance, Investments, Real Estate Finance - Psychology: Developmental Psychology, Neuroscience\nSelected projects ### Business Consulting Project Proposed an outsourced supply chain system to Pura Vida using gap analysis, SDLC, and data flow diagrams.\n\n\nCreated and analyzed database using SQL and created a dashboard using Python."
+  },
+  {
+    "objectID": "education.html#business-intelligence-analyst-professional-certificate",
+    "href": "education.html#business-intelligence-analyst-professional-certificate",
+    "title": "Education",
+    "section": "",
+    "text": "**UC San Diego Extended Studies 01/2025-06/2025*\nRelevant coursework * Data Visualization & Business Intelligence (Tableau) * Coding in R * Advanced Excel * SQL"
+  },
+  {
+    "objectID": "photography.html",
+    "href": "photography.html",
+    "title": "Photography",
+    "section": "",
+    "text": "Check out my Instagram!"
+  },
+  {
+    "objectID": "music.html",
+    "href": "music.html",
+    "title": "Music",
+    "section": "",
+    "text": "My Music!\n🌐 Band Website ✍️ Substack 🔗 Linktree\n\n\n🎧 Listen\nOpen on Spotify"
+  }
+]

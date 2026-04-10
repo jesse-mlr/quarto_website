@@ -1,0 +1,65 @@
+---
+title: "Education"
+page-layout: full
+toc: true
+---
+
+# Education
+
+## Master of Science in Business Analytics
+**University of California, San Diego - Rady School of Management**
+*July 2025 – December 2026*
+
+**Relevant coursework**
+- MGTA 455 - Customer Analytics & AI (Generative AI, Python, Cases on Customer Targeting, Statistical Modeling - Neural Networks, Logisistic Regression)
+- MGTA 453 - Business Analytics (Python, Linear Regression, Hypothesis Testing, Decision Analysis)
+- MGTA 452 - Collecting & Analyzing Large Data (Python, Automating Reporting & Using Quarto, Loading files, web scraping, API Calls, Regression)
+- MGTA 444 - Business Analytics Consulting
+- MGTA 466 - Scalable Analytics
+- MGTA 464 - SQL & ETL
+- MGTA 451 - Analytics in Marketing, Finance, & Operations
+
+**Projects**
+### Capstone Project
+Local Media San Diego
+
+### Interactive California Crime Data Dashboard
+Github Hosted Crime Analysis Interactive Web Dashboard. Final Project for MGTA 452 Class (Collecting/Analyzing Lrg Data)
+[View Project Repo](https://github.com/rsm-fluan/california-crime-dashboard) | [Web Dashbord](https://rsm-fluan.github.io/california-crime-dashboard/)
+
+
+### Snowflake ETL Project
+Engineered an ETL Pipeline using SQL & Python to create databases, schema, and tables using purchas order and invoice data. MGTA 464 Class (SQL & ETL)
+
+---
+
+## Bachelor of Art in Interdisciplinary Studies
+**San Diego State University**
+*2019–2022*
+
+**Disciplines**
+Management Information Systems, Psychology, Finance
+
+**Relevant coursework**
+- MIS: Systems Analysis, Data Management Systems, SAP ERP & SAP Analytics Cloud,
+- Finance: International Finance, Investments, Real Estate Finance
+- Psychology: Developmental Psychology, Neuroscience
+
+**Selected projects**
+### Business Consulting Project
+Proposed an outsourced supply chain system to Pura Vida using gap analysis, SDLC, and data flow diagrams.
+
+### Data Ordering System
+Created and analyzed database using SQL and created a dashboard using Python.
+
+---
+
+## Business Intelligence Analyst Professional Certificate
+**UC San Diego Extended Studies*
+*01/2025-06/2025*
+
+**Relevant coursework**
+* Data Visualization & Business Intelligence (Tableau)
+* Coding in R
+* Advanced Excel
+* SQL

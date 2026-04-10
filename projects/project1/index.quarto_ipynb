@@ -1,0 +1,34 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"California Crime Dashboard\"\n",
+        "author: Your Name\n",
+        "date: today\n",
+        "---\n",
+        "\n",
+        "# Header\n",
+        "\n",
+        "Let's investigate the relationship between fuel efficiency (`mpg`) and engine displacement (`disp`) from the `mtcars` dataset. Those variables have a correlation of `r cor(mtcars$mpg, mtcars$disp) |> format(digits=2)`.\n",
+        "\n",
+        "## Sub-Header\n",
+        "\n",
+        "Here is a plot:"
+      ],
+      "id": "26a378d3"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/opt/base-uv/.venv/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

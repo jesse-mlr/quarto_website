@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Jesse Miller"
+  navbar:
+    left:
+      - href: index.qmd
+        text: About
+      - href: resume.qmd
+        text: Resume
+      - href: projects.qmd
+        text: Projects
+      - href: education.qmd
+        text: Education
+      - href: photography.qmd
+        text: Photography
+      - href: music.qmd
+        text: Music
+
+format:
+  html:
+    theme:
+      - litera
+      - brand
+    css: styles.css
+    toc: true

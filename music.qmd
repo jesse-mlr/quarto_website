@@ -1,0 +1,18 @@
+---
+title: "Music"
+---
+
+### My Music!
+[🌐 Band Website](https://rainonfridays.com/){.btn .btn-primary}
+[✍️ Substack](https://rainonfridays.substack.com/){.btn .btn-secondary}
+[🔗 Linktree](https://linktr.ee/rainonfridays?fbclid=PAZXh0bgNhZW0CMTEAAaavdfknWWXKY9ILUV3-bFY066ALaWUy7UblCwjjqhNgE4K614PSXG2be8A_aem_ZhiWSRVhaSZxhH2CcgAaTw){.btn .btn-success}
+
+### 🎧 Listen
+[Open on Spotify](https://open.spotify.com/artist/your-artist-id){.btn .btn-dark}
+
+```{=html}
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/artist/1clbqsZIkv7ci3xQ9lmGPj?si=5vZ4pvywQs2F0nEX7H7dEg&utm_medium=share&utm_source=linktree&nd=1&dlsi=955174b9ff794a27"
+width="100%" height="380" frameBorder="0"
+allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
