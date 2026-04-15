@@ -1,0 +1,12 @@
+{
+  "hash": "d61cbff696cddde4cd051163ff34b072",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"California Crime Dashboard\"\nauthor: Your Name\ndate: today\n---\n\n# Header\n\nLet's investigate the relationship between fuel efficiency (`mpg`) and engine displacement (`disp`) from the `mtcars` dataset. Those variables have a correlation of `r cor(mtcars$mpg, mtcars$disp) |> format(digits=2)`.\n\n## Sub-Header\n\nHere is a plot:\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
