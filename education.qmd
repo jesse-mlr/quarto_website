@@ -57,10 +57,12 @@ Created and analyzed database using SQL and created a dashboard using Python.
 ---
 
 ## Business Intelligence Analyst Professional Certificate
-**UC San Diego Extended Studies*
+**UC San Diego Extended Studies**
+
 *01/2025-06/2025*
 
 **Relevant coursework**
+
 * Data Visualization & Business Intelligence (Tableau)
 * Coding in R
 * Advanced Excel
