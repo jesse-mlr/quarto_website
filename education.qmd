@@ -19,16 +19,17 @@ toc: true
 - MGTA 464 - SQL & ETL
 - MGTA 451 - Analytics in Marketing, Finance, & Operations
 
-**Projects**
-### Capstone Project
-Local Media San Diego
+### **Projects**
 
-### Interactive California Crime Data Dashboard
+#### Capstone Project
+Local Media San Diego - Data Integration & Centralization
+
+#### Interactive California Crime Data Dashboard
 Github Hosted Crime Analysis Interactive Web Dashboard. Final Project for MGTA 452 Class (Collecting/Analyzing Lrg Data)
 [View Project Repo](https://github.com/rsm-fluan/california-crime-dashboard) | [Web Dashbord](https://rsm-fluan.github.io/california-crime-dashboard/)
 
 
-### Snowflake ETL Project
+#### Snowflake ETL Project
 Engineered an ETL Pipeline using SQL & Python to create databases, schema, and tables using purchas order and invoice data. MGTA 464 Class (SQL & ETL)
 
 ---
@@ -45,11 +46,12 @@ Management Information Systems, Psychology, Finance
 - Finance: International Finance, Investments, Real Estate Finance
 - Psychology: Developmental Psychology, Neuroscience
 
-**Selected projects**
-### Business Consulting Project
+### **Selected projects**
+
+#### Business Consulting Project
 Proposed an outsourced supply chain system to Pura Vida using gap analysis, SDLC, and data flow diagrams.
 
-### Data Ordering System
+#### Data Ordering System
 Created and analyzed database using SQL and created a dashboard using Python.
 
 ---

@@ -4,4 +4,5 @@ author: Jesse Miller
 date: today
 ---
 
-# Header
+Github Hosted Crime Analysis Interactive Web Dashboard. Final Project for MGTA 452 Class (Collecting/Analyzing Lrg Data)
+[View Project Repo](https://github.com/rsm-fluan/california-crime-dashboard) | [Web Dashbord](https://rsm-fluan.github.io/california-crime-dashboard/)
