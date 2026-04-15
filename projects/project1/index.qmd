@@ -1,6 +1,6 @@
 ---
 title: "California Crime Dashboard"
-author: Your Name
+author: Jesse Miller
 date: today
 ---
 
