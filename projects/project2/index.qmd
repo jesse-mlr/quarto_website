@@ -4,6 +4,9 @@ subtitle: "Simulating Key Ideas from Classical Frequentist Statistics"
 author: "Jesse Miller"
 date: today
 description: "A simulation-based exploration of A/B testing and frequentist statistics concepts."
+execute:
+  echo: true
+  eval: true
 ---
 
 ## Introduction
