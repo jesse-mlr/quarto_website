@@ -3,6 +3,13 @@ title: "Replication of David Card and Alan B Krueger (1994)"
 subtitle: "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania"
 author: "Jesse Miller"
 date: today
+format:
+  html:
+    code-fold: true
+    code-tools: true
+execute:
+  warning: false
+  message: false
 ---
 
 ```{python}
