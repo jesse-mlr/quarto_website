@@ -76,7 +76,7 @@ names = [
     'PSODA2','PFRY2','PENTREE2','NREGS2','NREGS112'
 ]
 
-df = pd.read_fwf('public.dat', colspecs=colspecs, names=names, header=None)
+df = pd.read_fwf('njmin/public.dat', colspecs=colspecs, names=names, header=None)
 
 # Force everything numeric ('.' missing values become NaN)
 for col in df.columns:
