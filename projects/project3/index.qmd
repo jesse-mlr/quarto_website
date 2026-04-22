@@ -150,9 +150,11 @@ A foundational prediction of competitive labour economics is that raising the mi
 
 David Card and Alan Krueger challenged this consensus head-on. They studied the fast-food industry in New Jersey and eastern Pennsylvania around a single policy event: on April 1, 1992, New Jersey's minimum wage jumped from $4.25 to $5.05 per hour — an 18-percent increase and the highest state minimum in the country at the time. Pennsylvania's minimum wage stayed at $4.25.
 
+
 ::: {.callout-note title="Core Question"}
 Did fast-food employment fall in New Jersey after the minimum wage rose, compared to Pennsylvania where nothing changed?
 :::
+
 
 The authors conducted telephone surveys of 410 fast-food restaurants (Burger King, KFC, Roy Rogers, and Wendy's) — 331 in New Jersey and 79 in eastern Pennsylvania — in two waves: Wave 1 in February–March 1992 (before the rise) and Wave 2 in November–December 1992 (seven to eight months after). They measured full-time-equivalent (FTE) employment, starting wages, meal prices, and other store characteristics at both time points.
 
@@ -168,6 +170,7 @@ Table 2 compares store characteristics across states before and after the wage r
 ::: {.callout-tip title="Key Observation"}
 In Wave 1, starting wages in NJ (\$4.61) and PA (\$4.63) were statistically identical (t = −0.4). By Wave 2, NJ wages had jumped to \$5.08 while PA stayed at \$4.62 — the law visibly shifted NJ wages and nothing else.
 :::
+
 
 ```{python}
 #| label: table2
@@ -232,18 +235,18 @@ groups = {
 }
 
 records = []
-for label, col, row_name in [
+for col, row_name in [
     ('EMPTOT',  'Wave 1 FTE'),
     ('EMPTOT2', 'Wave 2 FTE'),
     ('DEMP',    'Change in FTE'),
 ]:
     row = {'Row': row_name}
     for grp_name, grp_df in groups.items():
-        m, se = mean_se(grp_df[label])
+        m, se = mean_se(grp_df[col])
         row[grp_name] = f"{m:.2f}\n({se:.2f})"
     # NJ − PA difference
-    pa_m, pa_se = mean_se(pa[label])
-    nj_m, nj_se = mean_se(nj[label])
+    pa_m, pa_se = mean_se(pa[col])
+    nj_m, nj_se = mean_se(nj[col])
     diff = nj_m - pa_m
     se_diff = np.sqrt(pa_se**2 + nj_se**2)
     row['NJ−PA (iii)'] = f"{diff:.2f}\n({se_diff:.2f})"
@@ -274,13 +277,16 @@ print(f"NJ employment change:  {nj_change:+.2f} FTE")
 print(f"DiD estimate:          {did:+.2f} FTE  (SE = {se_did:.2f},  t = {t_did:.2f})")
 ```
 
+
 ::: {.callout-important title="Main Finding — The DiD Estimate"}
 New Jersey employment *rose* by +0.47 FTE on average while Pennsylvania employment *fell* by −2.28 FTE. The difference-in-differences estimate is **+2.76 FTE (t = 2.05)**, statistically significant and positive — the opposite of what the competitive model predicts.
 :::
 
+
 ::: {.callout-note title="Internal Validation"}
 Within NJ, high-wage stores (already at ≥\$5.00 — largely unaffected by the law) fell by −2.16 FTE, almost identical to Pennsylvania's −2.28. This strongly supports using PA as a valid control: both "unaffected" groups tell the same story.
 :::
+
 
 ---
 
@@ -326,6 +332,7 @@ print(f"N:         {int(model.nobs)}")
 print(f"\nPaper reports: β̂ = 2.33 (SE = 1.19)  ✓")
 ```
 
+
 ::: {.callout-tip title="Interpretation"}
 The NJ dummy coefficient of **2.33** (SE = 1.19) means that, controlling for the general employment trend in Pennsylvania, New Jersey stores gained roughly 2.3 additional FTE workers as a result of the minimum wage increase. This is statistically significant at the 10% level.
 :::
@@ -357,12 +364,12 @@ groups_plot = {
     'NJ — high-wage (≥$5.00)':   (nj_high,  '#888888', '--', 'v', 1.8),
 }
 
-for label, (grp, color, ls, marker, lw) in groups_plot.items():
+for grp_label, (grp, color, ls, marker, lw) in groups_plot.items():
     w1 = grp['EMPTOT'].mean()
     w2 = grp['EMPTOT2'].mean()
     ax.plot([1, 2], [w1, w2],
             color=color, linestyle=ls, linewidth=lw,
-            marker=marker, markersize=7, label=label, zorder=3)
+            marker=marker, markersize=7, label=grp_label, zorder=3)
 
 # Policy marker
 ax.axvline(x=1.5, color='#b84a2e', linewidth=1.2, linestyle=':', alpha=.7)
@@ -404,6 +411,7 @@ Two features of this chart are worth highlighting:
 1. **Pennsylvania and NJ high-wage stores move in lockstep.** Both fall by roughly 2 FTE between waves — reflecting the mid-Atlantic recession of 1992. This convergence validates the control group.
 2. **NJ low- and mid-wage stores diverge sharply upward.** These are the stores most directly affected by the \$5.05 minimum. Instead of falling, their employment was roughly flat — producing the positive DiD gap.
 
+
 ::: {.callout-caution title="Alternative Explanations"}
 A sceptic might argue that unobserved demand shocks hit low-wage NJ stores disproportionately. The authors test this by checking whether *prices* rose faster at low-wage NJ stores (they did not — price increases were uniform across NJ wage groups). They also replicate the finding in narrow geographic sub-areas (Newark, Camden) where store-specific demand shocks are less plausible. Neither test supports the demand-shock story.
 :::
@@ -420,6 +428,7 @@ The DiD is not just a descriptive comparison — it has a causal interpretation 
 | **Exogenous timing** | The \$5.05 rate was legislated in 1990, two years before it took effect — not timed to coincide with favourable NJ conditions |
 | **Geographic proximity** | Eastern PA shares consumer markets and seasonal patterns with NJ |
 | **Internal falsification** | NJ high-wage stores (unaffected) track PA exactly, ruling out NJ-specific demand shocks |
+
 
 ::: {.callout-important title="The Causal Chain"}
 The DiD estimate of **+2.76 FTE (t = 2.05)** can be interpreted causally because: (1) the policy was assigned at the state level, not selected by stores; (2) the control group is geographically and economically comparable; and (3) multiple falsification checks are all consistent with the parallel-trends assumption holding.

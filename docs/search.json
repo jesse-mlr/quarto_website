@@ -1,68 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jesse Miller",
-    "section": "",
-    "text": "MSBA Student | UCSD Rady\nRady Data Analytics Club, Marketing & Communications Director | GBK Collective\nCapstone Consultant: Local Media San Diego | UCLA Anderson\nMusician & Co-founder: Rain on Fridays"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "My Resume",
-    "section": "",
-    "text": "Download PDF file."
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "My Projects",
-    "section": "",
-    "text": "A/B Testing a Call to Action\n\n\nA simulation-based exploration of A/B testing and frequentist statistics concepts.\n\n\n\nJesse Miller\n\n\nApr 15, 2026\n\n\n\n\n\n\n\n\n\n\n\nCalifornia Crime Dashboard\n\n\n\n\n\n\nJesse Miller\n\n\nApr 15, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/project1/index.html",
-    "href": "projects/project1/index.html",
-    "title": "California Crime Dashboard",
-    "section": "",
-    "text": "Github Hosted Crime Analysis Interactive Web Dashboard. Final Project for MGTA 452 Class (Collecting/Analyzing Lrg Data) View Project Repo | Web Dashbord"
-  },
-  {
-    "objectID": "projects/project1/index.html#sub-header",
-    "href": "projects/project1/index.html#sub-header",
-    "title": "California Crime Dashboard",
-    "section": "",
-    "text": "Here is a plot:"
-  },
-  {
-    "objectID": "index.html#current",
-    "href": "index.html#current",
-    "title": "Jesse Miller",
-    "section": "",
-    "text": "MSBA Student | UCSD Rady\nRady Data Analytics Club, Marketing & Communications Director | GBK Collective\nCapstone Consultant: Local Media San Diego | UCLA Anderson\nMusician & Co-founder: Rain on Fridays"
-  },
-  {
-    "objectID": "index.html#work-history",
-    "href": "index.html#work-history",
-    "title": "Jesse Miller",
-    "section": "Work History",
-    "text": "Work History\n\nProject Manager, The Banshee | 2024 - 2025\nRain on Fridays LLC | 2020 - Present\nMusic Director & Music Promotions Director, KCR College Radio | 2021 - 2023\nBusiness Operations Intern, Beth Am Early Childhood Center | 2021"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Jesse Miller",
-    "section": "Education",
-    "text": "Education\n\nM.S Business Analytics | UC San Diego, Rady School of Management 2025-2026\nBachelor of Art in Interdisciplinary Studies (Management Information Systems, Finance, Pyschology) | San Diego State University 2019-2022\nBusiness Intelligence Analysis Professional Certificate | UCSD Extended Studies\n\n:::"
-  },
-  {
     "objectID": "education.html",
     "href": "education.html",
     "title": "Education",
@@ -91,18 +28,32 @@
     "text": "UC San Diego Extended Studies\n01/2025-06/2025\nRelevant coursework\n\nData Visualization & Business Intelligence (Tableau)\nCoding in R\nAdvanced Excel\nSQL"
   },
   {
-    "objectID": "photography.html",
-    "href": "photography.html",
-    "title": "Photography",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jesse Miller",
     "section": "",
-    "text": "Check out my Instagram!"
+    "text": "MSBA Student | UCSD Rady\nRady Data Analytics Club, Marketing & Communications Director | GBK Collective\nCapstone Consultant: Local Media San Diego | UCLA Anderson\nMusician & Co-founder: Rain on Fridays"
   },
   {
-    "objectID": "music.html",
-    "href": "music.html",
-    "title": "Music",
+    "objectID": "index.html#current",
+    "href": "index.html#current",
+    "title": "Jesse Miller",
     "section": "",
-    "text": "My Music!\n🌐 Band Website ✍️ Substack 🔗 Linktree\n\n\n🎧 Listen\nOpen on Spotify"
+    "text": "MSBA Student | UCSD Rady\nRady Data Analytics Club, Marketing & Communications Director | GBK Collective\nCapstone Consultant: Local Media San Diego | UCLA Anderson\nMusician & Co-founder: Rain on Fridays"
+  },
+  {
+    "objectID": "index.html#work-history",
+    "href": "index.html#work-history",
+    "title": "Jesse Miller",
+    "section": "Work History",
+    "text": "Work History\n\nProject Manager, The Banshee | 2024 - 2025\nRain on Fridays LLC | 2020 - Present\nMusic Director & Music Promotions Director, KCR College Radio | 2021 - 2023\nBusiness Operations Intern, Beth Am Early Childhood Center | 2021"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Jesse Miller",
+    "section": "Education",
+    "text": "Education\n\nM.S Business Analytics | UC San Diego, Rady School of Management 2025-2026\nBachelor of Art in Interdisciplinary Studies (Management Information Systems, Finance, Pyschology) | San Diego State University 2019-2022\nBusiness Intelligence Analysis Professional Certificate | UCSD Extended Studies\n\n:::"
   },
   {
     "objectID": "projects/project2/index.html",
@@ -165,7 +116,7 @@
     "href": "projects/project2/index.html#the-t-test-as-a-regression",
     "title": "A/B Testing a Call to Action",
     "section": "The T-Test as a Regression",
-    "text": "The T-Test as a Regression\nIt turns out that the two-sample test we just ran is mathematically equivalent to a simple linear regression. Understanding this connection is useful because it means the same machinery — and the same software — that you use for regression can also perform hypothesis tests, and it generalizes naturally to more complex experimental designs.\nThe setup is straightforward. Stack the CTA A and CTA B data into a single dataset with two columns: an outcome \\(Y_i\\) (1 if the visitor signed up, 0 otherwise) and an indicator \\(D_i\\) (1 if the visitor saw CTA A, 0 if they saw CTA B).\nLet’s fit the regression: \\[\nY_i = \\beta_0 + \\beta_1 D_i + \\varepsilon_i\n\\]\nThese coefficients have clean interpretations: 1. \\(\\beta_0\\) is the expected value of \\(Y_i\\) when \\(D_i = 0\\) — i.e., the mean of the B group, which estimates \\(\\pi_B\\). 2. \\(\\beta_0 + \\beta_1\\) is the expected value of \\(Y_i\\) when \\(D_i = 1\\) — i.e., the mean of the A group, which estimates \\(\\pi_A\\). 3. Therefore \\(\\beta_1 = \\pi_A - \\pi_B = \\theta\\), and the OLS estimate \\(\\hat\\beta_1\\) is numerically identical to \\(\\hat\\theta = \\bar{X}_A - \\bar{X}_B\\).\nFitting the regression to our data:\n\nimport statsmodels.api as sm\n\nY = np.concatenate([draws_A, draws_B])\nD = np.concatenate([np.ones(n_A), np.zeros(n_B)])\nD_with_const = sm.add_constant(D)\n\nmodel = sm.OLS(Y, D_with_const).fit()\nprint(model.summary())\n\n                            OLS Regression Results                            \n==============================================================================\nDep. Variable:                      y   R-squared:                       0.001\nModel:                            OLS   Adj. R-squared:                  0.000\nMethod:                 Least Squares   F-statistic:                     1.874\nDate:                Wed, 15 Apr 2026   Prob (F-statistic):              0.171\nTime:                        13:03:47   Log-Likelihood:                -1045.8\nNo. Observations:                2000   AIC:                             2096.\nDf Residuals:                    1998   BIC:                             2107.\nDf Model:                           1                                         \nCovariance Type:            nonrobust                                         \n==============================================================================\n                 coef    std err          t      P&gt;|t|      [0.025      0.975]\n------------------------------------------------------------------------------\nconst          0.1990      0.013     15.409      0.000       0.174       0.224\nx1             0.0250      0.018      1.369      0.171      -0.011       0.061\n==============================================================================\nOmnibus:                      388.589   Durbin-Watson:                   1.999\nProb(Omnibus):                  0.000   Jarque-Bera (JB):              663.583\nSkew:                           1.411   Prob(JB):                    8.03e-145\nKurtosis:                       2.996   Cond. No.                         2.62\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.\n\n\nThe coefficient on \\(D_i\\)​ — that is, \\(\\hat\\beta_1\\)​ — matches the point estimate of \\(\\hat\\theta\\) we computed in the previous section. The t-statistic and p-value are likewise very close to those from the two-sample test, with any small discrepancy arising from a difference in how the standard error is calculated: standard OLS assumes a single pooled variance across both groups, while the two-sample formula we used earlier allows the variance to differ between groups. For balanced samples with similar proportions, the two approaches give nearly identical results.\nThis equivalence matters because of its flexibility. In the simple two-group case, both approaches give the same answer. But the regression framework makes it straightforward to go further: the regression framework makes it easy to add controls/co-variates to improve precision, interaction terms, or additional treatment arms, all while producing the same inference in the simple case and within the same modelling language and using the same software. The two-sample test is a special case; regression is the general tool."
+    "text": "The T-Test as a Regression\nIt turns out that the two-sample test we just ran is mathematically equivalent to a simple linear regression. Understanding this connection is useful because it means the same machinery — and the same software — that you use for regression can also perform hypothesis tests, and it generalizes naturally to more complex experimental designs.\nThe setup is straightforward. Stack the CTA A and CTA B data into a single dataset with two columns: an outcome \\(Y_i\\) (1 if the visitor signed up, 0 otherwise) and an indicator \\(D_i\\) (1 if the visitor saw CTA A, 0 if they saw CTA B).\nLet’s fit the regression: \\[\nY_i = \\beta_0 + \\beta_1 D_i + \\varepsilon_i\n\\]\nThese coefficients have clean interpretations: 1. \\(\\beta_0\\) is the expected value of \\(Y_i\\) when \\(D_i = 0\\) — i.e., the mean of the B group, which estimates \\(\\pi_B\\). 2. \\(\\beta_0 + \\beta_1\\) is the expected value of \\(Y_i\\) when \\(D_i = 1\\) — i.e., the mean of the A group, which estimates \\(\\pi_A\\). 3. Therefore \\(\\beta_1 = \\pi_A - \\pi_B = \\theta\\), and the OLS estimate \\(\\hat\\beta_1\\) is numerically identical to \\(\\hat\\theta = \\bar{X}_A - \\bar{X}_B\\).\nFitting the regression to our data:\n\nimport statsmodels.api as sm\n\nY = np.concatenate([draws_A, draws_B])\nD = np.concatenate([np.ones(n_A), np.zeros(n_B)])\nD_with_const = sm.add_constant(D)\n\nmodel = sm.OLS(Y, D_with_const).fit()\nprint(model.summary())\n\n                            OLS Regression Results                            \n==============================================================================\nDep. Variable:                      y   R-squared:                       0.001\nModel:                            OLS   Adj. R-squared:                  0.000\nMethod:                 Least Squares   F-statistic:                     1.874\nDate:                Wed, 22 Apr 2026   Prob (F-statistic):              0.171\nTime:                        14:53:33   Log-Likelihood:                -1045.8\nNo. Observations:                2000   AIC:                             2096.\nDf Residuals:                    1998   BIC:                             2107.\nDf Model:                           1                                         \nCovariance Type:            nonrobust                                         \n==============================================================================\n                 coef    std err          t      P&gt;|t|      [0.025      0.975]\n------------------------------------------------------------------------------\nconst          0.1990      0.013     15.409      0.000       0.174       0.224\nx1             0.0250      0.018      1.369      0.171      -0.011       0.061\n==============================================================================\nOmnibus:                      388.589   Durbin-Watson:                   1.999\nProb(Omnibus):                  0.000   Jarque-Bera (JB):              663.583\nSkew:                           1.411   Prob(JB):                    8.03e-145\nKurtosis:                       2.996   Cond. No.                         2.62\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.\n\n\nThe coefficient on \\(D_i\\)​ — that is, \\(\\hat\\beta_1\\)​ — matches the point estimate of \\(\\hat\\theta\\) we computed in the previous section. The t-statistic and p-value are likewise very close to those from the two-sample test, with any small discrepancy arising from a difference in how the standard error is calculated: standard OLS assumes a single pooled variance across both groups, while the two-sample formula we used earlier allows the variance to differ between groups. For balanced samples with similar proportions, the two approaches give nearly identical results.\nThis equivalence matters because of its flexibility. In the simple two-group case, both approaches give the same answer. But the regression framework makes it straightforward to go further: the regression framework makes it easy to add controls/co-variates to improve precision, interaction terms, or additional treatment arms, all while producing the same inference in the simple case and within the same modelling language and using the same software. The two-sample test is a special case; regression is the general tool."
   },
   {
     "objectID": "projects/project2/index.html#the-problem-with-peeking",
@@ -173,5 +124,96 @@
     "title": "A/B Testing a Call to Action",
     "section": "The Problem with Peeking",
     "text": "The Problem with Peeking\nSo far we have assumed that the experiment runs to completion before we look at the results. But what if your boss is impatient? Rather than waiting for all 1,000 visitors to be assigned to each group, she wants to check the results after every 100 visitors per group - peeking at the results after 100, 200, 300, …, up to 1,000 visitors per group (10 tests in total). If any of those tests comes back significant at the \\(\\alpha = 0.05\\) level, she wants to declare a winner and stop the experiment early.\nThis is a natural impulse, but it is statistically problematic. A single test at \\(\\alpha = 0.05\\) has a 5% chance of a false positive (rejecting \\(H_0\\) when it is actually true). But when you conduct multiple tests on accumulating data, each peek is another opportunity to get a false positive. The overall probability of at least one false rejection across all the peeks is much higher than 5%. This inflation of the Type I error rate is sometimes called the multiple comparisons problem, and it is one of the most common ways that A/B tests go wrong in practice.\nLet’s demonstrate this with a simulation where we simulate 10,000 experiments in a world where the null hypothesis is true — that is, where both CTAs produce identical sign-up rates (to see just how bad the problem can get):\n\npi_null = 0.20\nn_per_group = 1000\npeek_interval = 100\npeeks = np.arange(peek_interval, n_per_group + 1, peek_interval)\nn_experiments = 10000\nfalse_positives = 0\n\nfor _ in range(n_experiments):\n    obs_A = rng.binomial(1, pi_null, n_per_group)\n    obs_B = rng.binomial(1, pi_null, n_per_group)\n    rejected = False\n    for n in peeks:\n        mean_A = obs_A[:n].mean()\n        mean_B = obs_B[:n].mean()\n        se = np.sqrt(\n            (mean_A * (1 - mean_A)) / n +\n            (mean_B * (1 - mean_B)) / n\n        )\n        z = (mean_A - mean_B) / se\n        p = 2 * (1 - stats.norm.cdf(abs(z)))\n        if p &lt; 0.05:\n            rejected = True\n            break\n    if rejected:\n        false_positives += 1\n\nempirical_fpr = false_positives / n_experiments\nprint(f\"Nominal false positive rate (single test): 0.0500\")\nprint(f\"Empirical false positive rate (peeking):   {empirical_fpr:.4f}\")\n\nNominal false positive rate (single test): 0.0500\nEmpirical false positive rate (peeking):   0.1939\n\n\nThe result is striking. While a single test at the end of the experiment would produce a false positive just 5% of the time, the peeking strategy produces false positives at a rate far exceeding that — typically somewhere around 20–25%. That means that roughly one in four or five experiments would declare a winner even when neither CTA is actually better, simply as a consequence of looking too early and too often.\nThe practical implication is important: if you commit to a sample size in advance and test only once at the end, your false positive rate is controlled at alpha. But if you peek repeatedly and stop as soon as you see something significant, you are essentially giving yourself multiple chances to get lucky. The result is a testing procedure that produces far more spurious findings than advertised — and in a business context, that means making product decisions based on noise rather than signal."
+  },
+  {
+    "objectID": "projects/project1/index.html",
+    "href": "projects/project1/index.html",
+    "title": "California Crime Dashboard",
+    "section": "",
+    "text": "Github Hosted Crime Analysis Interactive Web Dashboard. Final Project for MGTA 452 Class (Collecting/Analyzing Lrg Data) View Project Repo | Web Dashbord"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "My Resume",
+    "section": "",
+    "text": "Download PDF file."
+  },
+  {
+    "objectID": "music.html",
+    "href": "music.html",
+    "title": "Music",
+    "section": "",
+    "text": "My Music!\n🌐 Band Website ✍️ Substack 🔗 Linktree\n\n\n🎧 Listen\nOpen on Spotify"
+  },
+  {
+    "objectID": "photography.html",
+    "href": "photography.html",
+    "title": "Photography",
+    "section": "",
+    "text": "Check out my Instagram!"
+  },
+  {
+    "objectID": "projects/project3/index.html",
+    "href": "projects/project3/index.html",
+    "title": "Replication of David Card and Alan B Krueger (1994)",
+    "section": "",
+    "text": "import pandas as pd\nimport numpy as np\nfrom scipy import stats\nimport statsmodels.api as sm\nimport matplotlib.pyplot as plt\nimport matplotlib.patches as mpatches\n\n# LOAD DATA\n# Fixed-width format defined by the codebook\ncolspecs = [\n    (0,3),    # SHEET\n    (4,5),    # CHAIN\n    (6,7),    # CO_OWNED\n    (8,9),    # STATE  (1=NJ, 0=PA)\n    (10,11),  # SOUTHJ\n    (12,13),  # CENTRALJ\n    (14,15),  # NORTHJ\n    (16,17),  # PA1\n    (18,19),  # PA2\n    (20,21),  # SHORE\n    (22,24),  # NCALLS\n    (25,30),  # EMPFT\n    (31,36),  # EMPPT\n    (37,42),  # NMGRS\n    (43,48),  # WAGE_ST\n    (49,54),  # INCTIME\n    (55,60),  # FIRSTINC\n    (61,62),  # BONUS\n    (63,68),  # PCTAFF\n    (69,70),  # MEALS\n    (71,76),  # OPEN\n    (77,82),  # HRSOPEN\n    (83,88),  # PSODA\n    (89,94),  # PFRY\n    (95,100), # PENTREE\n    (101,103),# NREGS\n    (104,106),# NREGS11\n    (107,108),# TYPE2\n    (109,110),# STATUS2\n    (111,117),# DATE2\n    (118,120),# NCALLS2\n    (121,126),# EMPFT2\n    (127,132),# EMPPT2\n    (133,138),# NMGRS2\n    (139,144),# WAGE_ST2\n    (145,150),# INCTIME2\n    (151,156),# FIRSTIN2\n    (157,158),# SPECIAL2\n    (159,160),# MEALS2\n    (161,166),# OPEN2R\n    (167,172),# HRSOPEN2\n    (173,178),# PSODA2\n    (179,184),# PFRY2\n    (185,190),# PENTREE2\n    (191,193),# NREGS2\n    (194,196),# NREGS112\n]\n\nnames = [\n    'SHEET','CHAIN','CO_OWNED','STATE','SOUTHJ','CENTRALJ','NORTHJ','PA1','PA2','SHORE',\n    'NCALLS','EMPFT','EMPPT','NMGRS','WAGE_ST','INCTIME','FIRSTINC','BONUS','PCTAFF','MEALS',\n    'OPEN','HRSOPEN','PSODA','PFRY','PENTREE','NREGS','NREGS11',\n    'TYPE2','STATUS2','DATE2','NCALLS2','EMPFT2','EMPPT2','NMGRS2','WAGE_ST2',\n    'INCTIME2','FIRSTIN2','SPECIAL2','MEALS2','OPEN2R','HRSOPEN2',\n    'PSODA2','PFRY2','PENTREE2','NREGS2','NREGS112'\n]\n\ndf = pd.read_fwf('njmin/public.dat', colspecs=colspecs, names=names, header=None)\n\n# Force everything numeric ('.' missing values become NaN)\nfor col in df.columns:\n    df[col] = pd.to_numeric(df[col], errors='coerce')\n# FTE employment = full-time + managers + 0.5 × part-time\ndf['EMPTOT']  = df['EMPFT']  + df['NMGRS']  + 0.5 * df['EMPPT']\ndf['EMPTOT2'] = df['EMPFT2'] + df['NMGRS2'] + 0.5 * df['EMPPT2']\n\n# Permanently closed stores (STATUS2=3) → employment = 0\ndf.loc[df['STATUS2'] == 3, 'EMPTOT2'] = 0.0\n# Temporarily closed stores (STATUS2=2,4,5) → treat as missing\ndf.loc[df['STATUS2'].isin([2, 4, 5]), 'EMPTOT2'] = np.nan\n\n# Change in FTE employment and wages\ndf['DEMP']  = df['EMPTOT2'] - df['EMPTOT']\ndf['DWAGE'] = df['WAGE_ST2'] - df['WAGE_ST']\n\n# NJ indicator and closed indicator\ndf['NJ']     = df['STATE']\ndf['CLOSED'] = (df['STATUS2'] == 3).astype(int)\n\n# GAP = proportional wage increase needed to reach new $5.05 minimum\ndef make_gap(row):\n    if row['STATE'] == 0:        return 0.0        # Pennsylvania: gap = 0\n    if pd.isna(row['WAGE_ST']):  return np.nan\n    if row['WAGE_ST'] &gt;= 5.05:   return 0.0        # already above new min\n    return (5.05 - row['WAGE_ST']) / row['WAGE_ST']\n\ndf['GAP'] = df.apply(make_gap, axis=1)\n\n# Meal price and chain dummies\ndf['PMEAL']  = df['PSODA']  + df['PFRY']  + df['PENTREE']\ndf['PMEAL2'] = df['PSODA2'] + df['PFRY2'] + df['PENTREE2']\ndf['BK']     = (df['CHAIN'] == 1).astype(float)\ndf['KFC']    = (df['CHAIN'] == 2).astype(float)\ndf['ROYS']   = (df['CHAIN'] == 3).astype(float)\n\n# Fraction full-time\ndf['FRACFT']  = df['EMPFT']  / df['EMPTOT']\ndf['FRACFT2'] = np.where(df['EMPTOT2'] &gt; 0, df['EMPFT2'] / df['EMPTOT2'], np.nan)\n\n# Split into state and wage subgroups\nnj = df[df['NJ'] == 1]\npa = df[df['NJ'] == 0]\n\nnj_low  = nj[nj['WAGE_ST'] == 4.25]\nnj_mid  = nj[(nj['WAGE_ST'] &gt; 4.25) & (nj['WAGE_ST'] &lt; 5.00)]\nnj_high = nj[nj['WAGE_ST'] &gt;= 5.00]\n\n# Helper functions\ndef mean_se(series):\n    \"\"\"Return (mean, standard error) ignoring NaN.\"\"\"\n    s = series.dropna()\n    return s.mean(), s.std() / np.sqrt(len(s))\n\ndef ttest_2samp(a, b):\n    \"\"\"Two-sample Welch t-statistic.\"\"\"\n    t, _ = stats.ttest_ind(a.dropna(), b.dropna())\n    return t"
+  },
+  {
+    "objectID": "projects/project3/index.html#introduction",
+    "href": "projects/project3/index.html#introduction",
+    "title": "Replication of David Card and Alan B Krueger (1994)",
+    "section": "Introduction",
+    "text": "Introduction\nA foundational prediction of competitive labour economics is that raising the minimum wage must reduce employment. If employers face a wage floor above the market-clearing rate, the textbook supply-and-demand model says they will hire fewer workers. By the early 1990s this prediction had been tested many times — mostly by regressing aggregate teenage employment rates on the minimum wage — and the consensus, while disputed, leaned negative.\nDavid Card and Alan Krueger challenged this consensus head-on. They studied the fast-food industry in New Jersey and eastern Pennsylvania around a single policy event: on April 1, 1992, New Jersey’s minimum wage jumped from $4.25 to $5.05 per hour — an 18-percent increase and the highest state minimum in the country at the time. Pennsylvania’s minimum wage stayed at $4.25.\n\n\n\n\n\n\nNoteCore Question\n\n\n\nDid fast-food employment fall in New Jersey after the minimum wage rose, compared to Pennsylvania where nothing changed?\n\n\nThe authors conducted telephone surveys of 410 fast-food restaurants (Burger King, KFC, Roy Rogers, and Wendy’s) — 331 in New Jersey and 79 in eastern Pennsylvania — in two waves: Wave 1 in February–March 1992 (before the rise) and Wave 2 in November–December 1992 (seven to eight months after). They measured full-time-equivalent (FTE) employment, starting wages, meal prices, and other store characteristics at both time points.\nThe design is a classic difference-in-differences (DiD): New Jersey stores are the treatment group (affected by the wage change), Pennsylvania stores are the control group (unaffected). Comparing employment changes across the two states nets out any common trend — seasonal patterns, a general recession — and isolates the causal effect of the policy.\nTheir headline result was striking: employment did not fall in New Jersey. If anything, it rose modestly relative to Pennsylvania. The paper became one of the most cited and debated studies in empirical economics, helping launch a new generation of research on minimum wages that relies on natural experiments rather than aggregate time-series data."
+  },
+  {
+    "objectID": "projects/project3/index.html#main-analysis",
+    "href": "projects/project3/index.html#main-analysis",
+    "title": "Replication of David Card and Alan B Krueger (1994)",
+    "section": "Main Analysis",
+    "text": "Main Analysis\n\nTable 2: Means of Key Variables\nTable 2 compares store characteristics across states before and after the wage rise. Before April 1992, NJ and PA stores look remarkably similar on wages, hours, and chain mix: important evidence that the two groups are comparable.\n\n\n\n\n\n\nTipKey Observation\n\n\n\nIn Wave 1, starting wages in NJ ($4.61) and PA ($4.63) were statistically identical (t = −0.4). By Wave 2, NJ wages had jumped to $5.08 while PA stayed at $4.62 — the law visibly shifted NJ wages and nothing else.\n\n\n\nrows = [\n    # (display label,          NJ series,              PA series,        multiply)\n    (\"FTE employment\",         nj['EMPTOT'],            pa['EMPTOT'],           1),\n    (\"% full-time employees\",  nj['FRACFT']*100,        pa['FRACFT']*100,       1),\n    (\"Starting wage ($/hr)\",   nj['WAGE_ST'],           pa['WAGE_ST'],          1),\n    (\"Price of full meal ($)\", nj['PMEAL'],             pa['PMEAL'],            1),\n    (\"Hours open (weekday)\",   nj['HRSOPEN'],           pa['HRSOPEN'],          1),\n]\n\nrows_w2 = [\n    (\"FTE employment\",         nj['EMPTOT2'],           pa['EMPTOT2'],          1),\n    (\"% full-time employees\",  nj['FRACFT2']*100,       pa['FRACFT2']*100,      1),\n    (\"Starting wage ($/hr)\",   nj['WAGE_ST2'],          pa['WAGE_ST2'],         1),\n    (\"Price of full meal ($)\", nj['PMEAL2'],            pa['PMEAL2'],           1),\n    (\"Hours open (weekday)\",   nj['HRSOPEN2'],          pa['HRSOPEN2'],         1),\n]\n\ndef make_table2_df(row_list):\n    records = []\n    for label, nj_s, pa_s, _ in row_list:\n        nj_m, nj_se = mean_se(nj_s)\n        pa_m, pa_se = mean_se(pa_s)\n        t = ttest_2samp(nj_s, pa_s)\n        records.append({\n            'Variable': label,\n            'NJ mean': f\"{nj_m:.2f}\",\n            'NJ SE':   f\"({nj_se:.2f})\",\n            'PA mean': f\"{pa_m:.2f}\",\n            'PA SE':   f\"({pa_se:.2f})\",\n            't-stat':  f\"{t:.1f}\",\n        })\n    return pd.DataFrame(records).set_index('Variable')\n\nprint(\"── Wave 1 (before, Feb/Mar 1992) ──\")\ndisplay(make_table2_df(rows))\n\nprint(\"\\n── Wave 2 (after, Nov/Dec 1992) ──\")\ndisplay(make_table2_df(rows_w2))\n\n── Wave 1 (before, Feb/Mar 1992) ──\n\n\n\n\n\n\n\n\n\nNJ mean\nNJ SE\nPA mean\nPA SE\nt-stat\n\n\nVariable\n\n\n\n\n\n\n\n\n\nFTE employment\n20.44\n(0.51)\n23.33\n(1.35)\n-2.4\n\n\n% full-time employees\n32.85\n(1.33)\n35.04\n(2.73)\n-0.7\n\n\nStarting wage ($/hr)\n4.61\n(0.02)\n4.63\n(0.04)\n-0.4\n\n\nPrice of full meal ($)\n3.35\n(0.04)\n3.04\n(0.07)\n3.8\n\n\nHours open (weekday)\n14.42\n(0.15)\n14.53\n(0.33)\n-0.3\n\n\n\n\n\n\n\n\n── Wave 2 (after, Nov/Dec 1992) ──\n\n\n\n\n\n\n\n\n\nNJ mean\nNJ SE\nPA mean\nPA SE\nt-stat\n\n\nVariable\n\n\n\n\n\n\n\n\n\nFTE employment\n21.03\n(0.52)\n21.17\n(0.94)\n-0.1\n\n\n% full-time employees\n35.87\n(1.38)\n30.38\n(2.81)\n1.8\n\n\nStarting wage ($/hr)\n5.08\n(0.01)\n4.62\n(0.04)\n19.7\n\n\nPrice of full meal ($)\n3.41\n(0.04)\n3.03\n(0.07)\n4.7\n\n\nHours open (weekday)\n14.42\n(0.15)\n14.65\n(0.33)\n-0.7\n\n\n\n\n\n\n\n\n\n\nTable 3: Employment Before, After, and Change\nTable 3 is the heart of the paper. Rows 1–3 show Wave 1 employment, Wave 2 employment, and the change for each group. Columns i–iii give results for PA, NJ, and the NJ−PA difference. Columns iv–viii break NJ stores down by their initial wage level.\n\ngroups = {\n    'PA (i)':        pa,\n    'NJ (ii)':       nj,\n    'NJ $4.25 (iv)': nj_low,\n    'NJ mid (v)':    nj_mid,\n    'NJ ≥$5 (vi)':   nj_high,\n}\n\nrecords = []\nfor col, row_name in [\n    ('EMPTOT',  'Wave 1 FTE'),\n    ('EMPTOT2', 'Wave 2 FTE'),\n    ('DEMP',    'Change in FTE'),\n]:\n    row = {'Row': row_name}\n    for grp_name, grp_df in groups.items():\n        m, se = mean_se(grp_df[col])\n        row[grp_name] = f\"{m:.2f}\\n({se:.2f})\"\n    # NJ − PA difference\n    pa_m, pa_se = mean_se(pa[col])\n    nj_m, nj_se = mean_se(nj[col])\n    diff = nj_m - pa_m\n    se_diff = np.sqrt(pa_se**2 + nj_se**2)\n    row['NJ−PA (iii)'] = f\"{diff:.2f}\\n({se_diff:.2f})\"\n    records.append(row)\n\nt3 = pd.DataFrame(records).set_index('Row')\n# Reorder columns\ncol_order = ['PA (i)', 'NJ (ii)', 'NJ−PA (iii)',\n             'NJ $4.25 (iv)', 'NJ mid (v)', 'NJ ≥$5 (vi)']\ndisplay(t3[col_order])\n\n\n\n\n\n\n\n\nPA (i)\nNJ (ii)\nNJ−PA (iii)\nNJ $4.25 (iv)\nNJ mid (v)\nNJ ≥$5 (vi)\n\n\nRow\n\n\n\n\n\n\n\n\n\n\nWave 1 FTE\n23.33\\n(1.35)\n20.44\\n(0.51)\n-2.89\\n(1.44)\n19.56\\n(0.77)\n20.08\\n(0.84)\n22.25\\n(1.14)\n\n\nWave 2 FTE\n21.17\\n(0.94)\n21.03\\n(0.52)\n-0.14\\n(1.08)\n20.88\\n(1.01)\n20.96\\n(0.76)\n20.21\\n(1.03)\n\n\nChange in FTE\n-2.28\\n(1.25)\n0.47\\n(0.48)\n2.75\\n(1.34)\n1.20\\n(0.82)\n0.71\\n(0.69)\n-2.16\\n(1.01)\n\n\n\n\n\n\n\n\npa_change = pa['DEMP'].mean()\nnj_change = nj['DEMP'].mean()\ndid       = nj_change - pa_change\nse_did    = np.sqrt(\n    (pa['DEMP'].std() / np.sqrt(pa['DEMP'].count()))**2 +\n    (nj['DEMP'].std() / np.sqrt(nj['DEMP'].count()))**2\n)\nt_did = did / se_did\n\nprint(f\"PA employment change:  {pa_change:+.2f} FTE\")\nprint(f\"NJ employment change:  {nj_change:+.2f} FTE\")\nprint(f\"DiD estimate:          {did:+.2f} FTE  (SE = {se_did:.2f},  t = {t_did:.2f})\")\n\nPA employment change:  -2.28 FTE\nNJ employment change:  +0.47 FTE\nDiD estimate:          +2.75 FTE  (SE = 1.34,  t = 2.05)\n\n\n\n\n\n\n\n\nImportantMain Finding — The DiD Estimate\n\n\n\nNew Jersey employment rose by +0.47 FTE on average while Pennsylvania employment fell by −2.28 FTE. The difference-in-differences estimate is +2.76 FTE (t = 2.05), statistically significant and positive — the opposite of what the competitive model predicts.\n\n\n\n\n\n\n\n\nNoteInternal Validation\n\n\n\nWithin NJ, high-wage stores (already at ≥$5.00 — largely unaffected by the law) fell by −2.16 FTE, almost identical to Pennsylvania’s −2.28. This strongly supports using PA as a valid control: both “unaffected” groups tell the same story.\n\n\n\n\n\nTable 4, Column (i) — Regression-Adjusted Estimate\nRather than simple means, the authors also regress the change in FTE employment on a New Jersey dummy. This uses the same 357 stores with valid employment and wage data in both waves (plus permanently closed stores).\nModel:\n\\[\\Delta E_i = \\alpha + \\beta \\cdot NJ_i + \\varepsilon_i\\]\nwhere \\(\\Delta E_i\\) is the change in FTE employment and \\(NJ_i = 1\\) for New Jersey stores. The coefficient \\(\\hat{\\beta}\\) is the regression-based DiD estimate.\n\n# Sample: stores with non-missing DEMP and (closed OR non-missing wage change)\nmask   = df['DEMP'].notna() & ((df['CLOSED'] == 1) | (df['DWAGE'].notna()))\nsample = df[mask].dropna(subset=['GAP'])\n\nprint(f\"Sample size: {len(sample)}  (paper reports 357)\\n\")\n\nX     = sm.add_constant(sample['NJ'])\nmodel = sm.OLS(sample['DEMP'], X).fit()\n\nresults = pd.DataFrame({\n    'Coefficient': [round(model.params['NJ'], 2),\n                    round(model.params['const'], 2)],\n    'Std. Error':  [round(model.bse['NJ'], 2),\n                    round(model.bse['const'], 2)],\n    't-statistic': [round(model.tvalues['NJ'], 2),\n                    round(model.tvalues['const'], 2)],\n}, index=['NJ dummy (β̂)', 'Constant (α̂)'])\n\ndisplay(results)\nprint(f\"\\nRoot MSE:  {model.mse_resid**0.5:.2f}\")\nprint(f\"N:         {int(model.nobs)}\")\nprint(f\"\\nPaper reports: β̂ = 2.33 (SE = 1.19)  ✓\")\n\nSample size: 357  (paper reports 357)\n\n\n\n\n\n\n\n\n\n\nCoefficient\nStd. Error\nt-statistic\n\n\n\n\nNJ dummy (β̂)\n2.33\n1.19\n1.95\n\n\nConstant (α̂)\n-2.13\n1.07\n-1.98\n\n\n\n\n\n\n\n\nRoot MSE:  8.79\nN:         357\n\nPaper reports: β̂ = 2.33 (SE = 1.19)  ✓\n\n\n\n\n\n\n\n\nTipInterpretation\n\n\n\nThe NJ dummy coefficient of 2.33 (SE = 1.19) means that, controlling for the general employment trend in Pennsylvania, New Jersey stores gained roughly 2.3 additional FTE workers as a result of the minimum wage increase. This is statistically significant at the 10% level."
+  },
+  {
+    "objectID": "projects/project3/index.html#an-additional-analysis-visualising-the-did",
+    "href": "projects/project3/index.html#an-additional-analysis-visualising-the-did",
+    "title": "Replication of David Card and Alan B Krueger (1994)",
+    "section": "An Additional Analysis: Visualising the DiD",
+    "text": "An Additional Analysis: Visualising the DiD\nThe table numbers tell the story, but a parallel-trends chart makes the difference-in-differences logic visible. Under the parallel-trends assumption, PA is the counterfactual for what would have happened to NJ absent the policy. The gap that opens up between NJ and PA in Wave 2 is the DiD estimate.\n\nfig, ax = plt.subplots(figsize=(9, 5.5))\nfig.patch.set_facecolor('#fafaf7')\nax.set_facecolor('#fafaf7')\n\n# ── compute group means ──\nwaves   = [1, 2]\nx_ticks = [1, 2]\n\ngroups_plot = {\n    'Pennsylvania (control)':    (pa,       '#3a5068', '-',  'o', 2.5),\n    'NJ — all stores':           (nj,       '#b84a2e', '-',  's', 2.5),\n    'NJ — low-wage ($4.25)':     (nj_low,   '#2d5a3d', '--', '^', 2.0),\n    'NJ — mid-wage ($4.26–$4.99)':(nj_mid,  '#6a9e7f', ':',  'D', 1.8),\n    'NJ — high-wage (≥$5.00)':   (nj_high,  '#888888', '--', 'v', 1.8),\n}\n\nfor grp_label, (grp, color, ls, marker, lw) in groups_plot.items():\n    w1 = grp['EMPTOT'].mean()\n    w2 = grp['EMPTOT2'].mean()\n    ax.plot([1, 2], [w1, w2],\n            color=color, linestyle=ls, linewidth=lw,\n            marker=marker, markersize=7, label=grp_label, zorder=3)\n\n# Policy marker\nax.axvline(x=1.5, color='#b84a2e', linewidth=1.2, linestyle=':', alpha=.7)\nax.text(1.52, 24.8, 'Min wage rises\\n(Apr 1, 1992)',\n        color='#b84a2e', fontsize=8.5, style='italic', va='top')\n\n# Shading for the \"after\" period\nax.axvspan(1.5, 2.15, alpha=.07, color='#b84a2e')\n\n# DiD annotation bracket\npa_w2 = pa['EMPTOT2'].mean()\nnj_w2 = nj['EMPTOT2'].mean()\nax.annotate('', xy=(2.08, nj_w2), xytext=(2.08, pa_w2),\n            arrowprops=dict(arrowstyle='&lt;-&gt;', color='#555', lw=1.2))\nax.text(2.10, (nj_w2 + pa_w2) / 2,\n        f'DiD\\n+{did:.2f}',\n        fontsize=8, color='#555', va='center')\n\nax.set_xticks([1, 2])\nax.set_xticklabels(['Wave 1\\n(Feb/Mar 1992, before)', 'Wave 2\\n(Nov/Dec 1992, after)'],\n                   fontsize=10)\nax.set_ylabel('Average FTE Employment', fontsize=10)\nax.set_xlim(0.75, 2.35)\nax.set_ylim(17, 26)\nax.spines[['top', 'right']].set_visible(False)\nax.spines[['left', 'bottom']].set_color('#aaa')\nax.tick_params(colors='#555')\nax.yaxis.label.set_color('#555')\nax.grid(axis='y', color='#ddd', linewidth=.8, zorder=0)\nax.legend(loc='lower left', fontsize=8.5, framealpha=.85,\n          edgecolor='#ccc', facecolor='white')\n\nplt.tight_layout()\nplt.show()\n\n\n\n\nAverage FTE employment before and after the New Jersey minimum wage rise. Each line tracks a different group of stores. NJ high-wage stores (≥$5.00) were largely unaffected by the new law and serve as an internal control.\n\n\n\n\nTwo features of this chart are worth highlighting:\n\nPennsylvania and NJ high-wage stores move in lockstep. Both fall by roughly 2 FTE between waves — reflecting the mid-Atlantic recession of 1992. This convergence validates the control group.\nNJ low- and mid-wage stores diverge sharply upward. These are the stores most directly affected by the $5.05 minimum. Instead of falling, their employment was roughly flat — producing the positive DiD gap.\n\n\n\n\n\n\n\nCautionAlternative Explanations\n\n\n\nA sceptic might argue that unobserved demand shocks hit low-wage NJ stores disproportionately. The authors test this by checking whether prices rose faster at low-wage NJ stores (they did not — price increases were uniform across NJ wage groups). They also replicate the finding in narrow geographic sub-areas (Newark, Camden) where store-specific demand shocks are less plausible. Neither test supports the demand-shock story."
+  },
+  {
+    "objectID": "projects/project3/index.html#why-does-this-design-support-a-causal-claim",
+    "href": "projects/project3/index.html#why-does-this-design-support-a-causal-claim",
+    "title": "Replication of David Card and Alan B Krueger (1994)",
+    "section": "4 Why Does This Design Support a Causal Claim?",
+    "text": "4 Why Does This Design Support a Causal Claim?\nThe DiD is not just a descriptive comparison — it has a causal interpretation under the parallel trends assumption: absent the policy change, NJ and PA employment would have followed the same trend. The study provides several reasons to believe this:\n\n\n\n\n\n\n\nCondition\nEvidence in this study\n\n\n\n\nPre-treatment similarity\nStarting wages and chain composition were statistically identical across states in Wave 1\n\n\nExogenous timing\nThe $5.05 rate was legislated in 1990, two years before it took effect — not timed to coincide with favourable NJ conditions\n\n\nGeographic proximity\nEastern PA shares consumer markets and seasonal patterns with NJ\n\n\nInternal falsification\nNJ high-wage stores (unaffected) track PA exactly, ruling out NJ-specific demand shocks\n\n\n\n\n\n\n\n\n\nImportantThe Causal Chain\n\n\n\nThe DiD estimate of +2.76 FTE (t = 2.05) can be interpreted causally because: (1) the policy was assigned at the state level, not selected by stores; (2) the control group is geographically and economically comparable; and (3) multiple falsification checks are all consistent with the parallel-trends assumption holding."
+  },
+  {
+    "objectID": "projects/project3/index.html#conclusion-summary-of-findings",
+    "href": "projects/project3/index.html#conclusion-summary-of-findings",
+    "title": "Replication of David Card and Alan B Krueger (1994)",
+    "section": "5 Conclusion & Summary of Findings",
+    "text": "5 Conclusion & Summary of Findings\nThe replication confirms the paper’s headline results with precision. In every specification, the estimated employment effect of New Jersey’s minimum wage increase is positive — or at least not significantly negative. The DiD estimate of +2.76 FTE is statistically significant, and the regression-adjusted estimate from Table 4 comes in at +2.33 (SE = 1.19), an exact match to the published paper.\nCard and Krueger did not claim the minimum wage always raises employment. Their study did not settle the debate over minimum wages: methodological critiques, re-analyses using payroll rather than survey data, and decades of subsequent research have added nuance. But it changed how economists approach the question. Their contribution was methodological as much as substantive: by grounding identification in a natural experiment with a credible control group and multiple built-in validity checks, they showed that establishment-level DiD designs could credibly challenge the received wisdom of the textbook competitive model or that competitive theory alone settles the question."
+  },
+  {
+    "objectID": "projects/project3/index.html#references",
+    "href": "projects/project3/index.html#references",
+    "title": "Replication of David Card and Alan B Krueger (1994)",
+    "section": "References",
+    "text": "References\nCard, David and Alan B. Krueger. “Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania.” American Economic Review 84(4), September 1994, pp. 772–793."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "My Projects",
+    "section": "",
+    "text": "A/B Testing a Call to Action\n\n\nA simulation-based exploration of A/B testing and frequentist statistics concepts.\n\n\n\nJesse Miller\n\n\nApr 22, 2026\n\n\n\n\n\n\n\n\n\n\n\nCalifornia Crime Dashboard\n\n\n\n\n\n\nJesse Miller\n\n\nApr 22, 2026\n\n\n\n\n\n\n\n\n\n\n\nReplication of David Card and Alan B Krueger (1994)\n\n\n\n\n\n\nJesse Miller\n\n\nApr 22, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
