@@ -4,6 +4,7 @@ subtitle: "Simulating Key Ideas from Classical Frequentist Statistics"
 author: "Jesse Miller"
 date: today
 description: "A simulation-based exploration of A/B testing and frequentist statistics concepts."
+categories: [Python, Statistics, A/B Testing]
 execute:
   echo: true
   eval: true
@@ -12,9 +13,10 @@ execute:
 ## Introduction
 Hello there! Welcome to my website. The landing page includes a place where visitors can sign up to receive my newsletter.
 
-I have to possible calls to action (CTAs) that I could display to visitors:
-* CTA A: "Don't miss out, subscribe to my newsletter!"
-* CTA B: "Join my community and stay in the loop!"
+I have two possible calls to action (CTAs) that I could display to visitors:
+
+* **CTA A:** "Don't miss out, subscribe to my newsletter!"
+* **CTA B:** "Join my community and stay in the loop!"
 
 In this post for my homework 1, I am going to test which one leads to more sign ups using an A/B test.
 
@@ -66,6 +68,8 @@ This is what underpins our estimator: given a large enough sample, $\hat\theta =
 
 To see this in action, we compute the element-wise difference between our two sets of draws and track the cumulative average as we add one observation at a time:
 ```{python}
+#| fig-cap: "Cumulative average difference between draws_A and draws_B as the sample size grows. The dashed red line marks the true θ = 0.04."
+#| fig-alt: "Line chart with the cumulative average difference jumping erratically when only a few observations are included, then settling and converging toward the dashed red line at 0.04 as the sample grows to 1,000."
 import matplotlib.pyplot as plt
 
 differences = draws_A - draws_B
@@ -82,7 +86,11 @@ plt.tight_layout()
 plt.show()
 ```
 
-This plot shows a noisy average when only a few observations are included that settles down and converges toward the true difference of 0.04 as the sample size grows. With only a handful of observations, the cumulative average jumps around erratically: a single sign-up or non-sign-up has an outsized effect when the sample is small. But as more visitors are added, the noise smooths out and the running average settles close to the true difference of $\theta$ = 0.04, marked by the dashed red line. This is the Law of Large Numbers at work: no single observation tells us much, but the collective signal from a large sample is reliable.
+This plot shows a noisy average when only a few observations are included that settles down and converges toward the true difference of 0.04 as the sample size grows. With only a handful of observations, the cumulative average jumps around erratically: a single sign-up or non-sign-up has an outsized effect when the sample is small. But as more visitors are added, the noise smooths out and the running average settles close to the true difference of $\theta$ = 0.04, marked by the dashed red line.
+
+::: {.callout-tip title="Key Takeaway"}
+This is the Law of Large Numbers at work: no single observation tells us much, but the collective signal from a large sample is reliable.
+:::
 
 
 ## Bootstrap Standard Errors
@@ -112,7 +120,11 @@ print(f"Bootstrapped SE: {bootstrap_se:.4f}")
 print(f"Analytical SE:  {analytical_se:.4f}")
 ```
 
-The two standard errors come out very close to one another, a reassuring sign that the bootstrap is doing its job. We can now use the bootstrapped standard error to construct a 95% confidence interval:
+::: {.callout-tip title="Key Takeaway"}
+The two standard errors come out very close to one another, a reassuring sign that the bootstrap is doing its job.
+:::
+
+We can now use the bootstrapped standard error to construct a 95% confidence interval:
 ```{python}
 theta_hat = pi_hat_A - pi_hat_B
 ci_lower = theta_hat - 1.96 * bootstrap_se
@@ -122,7 +134,30 @@ print(f"Point estimate:       {theta_hat:.4f}")
 print(f"95% confidence interval: ({ci_lower:.4f}, {ci_upper:.4f})")
 ```
 
-Our point estimate and confidence interval tell us that CTA A appears to outperform CTA B, and that the true difference $\theta$ plausibly lies somewhere in that range. Crucially, if the interval does not contain zero, we have reasonable grounds to conclude that the difference is not simply due to chance. CTA A genuinely seems to drive more sign-ups.
+To make the bootstrap concept more concrete, we can also visualize the full distribution of the 1,000 resampled estimates of $\hat\theta$:
+
+```{python}
+#| fig-cap: "Bootstrap distribution of θ̂ across 1,000 resamples. Solid line = point estimate; dashed lines = 95% CI bounds; dotted line = the null value θ = 0."
+#| fig-alt: "Histogram of bootstrapped estimates centered around 0.025, roughly bell-shaped, with vertical lines marking the point estimate, the lower and upper bounds of the 95% confidence interval, and the null value of zero."
+plt.figure(figsize=(10, 5))
+plt.hist(bootstrap_estimates, bins=40, color="steelblue",
+         edgecolor="white", linewidth=0.5)
+plt.axvline(theta_hat, color="black", linewidth=1.5,
+            label=f"Point estimate = {theta_hat:.3f}")
+plt.axvline(ci_lower, color="crimson", linestyle="--",
+            linewidth=1.5, label="95% CI bounds")
+plt.axvline(ci_upper, color="crimson", linestyle="--", linewidth=1.5)
+plt.axvline(0, color="gray", linestyle=":", linewidth=1.5,
+            label="θ = 0 (null)")
+plt.xlabel("Bootstrapped estimate of θ̂")
+plt.ylabel("Frequency")
+plt.title("Bootstrap distribution of the difference in sign-up rates")
+plt.legend()
+plt.tight_layout()
+plt.show()
+```
+
+Our point estimate and 95% confidence interval together tell us that CTA A appears to outperform CTA B in this sample, but the interval is wide and includes zero — meaning we cannot rule out the possibility that the two CTAs perform equally well, or even that CTA B is slightly better. The histogram makes this visually obvious: a meaningful chunk of the bootstrap distribution sits at or below zero. We'll formalize this intuition with a hypothesis test in a moment.
 
 
 ## The Central Limit Theorem
@@ -132,6 +167,8 @@ Since $\hat\theta = \bar{X}_A - \bar{X}_B$ is a difference of two sample means, 
 
 To see this, we simulate 1,000 estimates of $\hat\theta$ at four different sample sizes and plot the resulting distributions:
 ```{python}
+#| fig-cap: "Sampling distribution of θ̂ at four sample sizes (n = 25, 50, 100, 500). The dashed red line marks the true θ = 0.04."
+#| fig-alt: "Four histograms arranged in a 2x2 grid showing the sampling distribution of theta-hat at n = 25, 50, 100, and 500. The distribution becomes progressively smoother and more bell-shaped as n increases, centered near 0.04."
 sample_sizes = [25, 50, 100, 500]
 n_simulations = 1000
 
@@ -163,15 +200,21 @@ plt.tight_layout()
 plt.show()
 ```
 
-At small sample sizes, particularly $n$=25, the histogram may look rough or asymmetric, reflecting the fact that with few observations each simulated estimate is heavily influenced by chance.As $n$ increases, the distribution of $\hat\theta$ becomes smoother and more bell-shaped, centered on the true value of $\theta$=0.04. By $n$=500, the Normal approximation looks very convincing. This illustrates the Central Limit Theorem in action. It is what allows us to use Normal-based confidence intervals and hypothesis tests when working with proportions, even though the underlying data are Bernoulli, not Normal, random variables.
+At small sample sizes, particularly $n$=25, the histogram may look rough or asymmetric, reflecting the fact that with few observations each simulated estimate is heavily influenced by chance. As $n$ increases, the distribution of $\hat\theta$ becomes smoother and more bell-shaped, centered on the true value of $\theta$=0.04. By $n$=500, the Normal approximation looks very convincing.
+
+::: {.callout-tip title="Key Takeaway"}
+This illustrates the Central Limit Theorem in action. It is what allows us to use Normal-based confidence intervals and hypothesis tests when working with proportions, even though the underlying data are Bernoulli, not Normal, random variables.
+:::
+
 
 ## Hypothesis Testing
 Now that we have seen the CLT in action — that the sampling distribution of $\hat\theta$ is approximately Normal for large samples — we can use this result to perform a formal hypothesis test.
 
-The idea behind hypothesis testing is to ask: *if there were truly no difference between the two CTAs, how surprising would our data be?*
-We formalize this by setting up two competing hypotheses:
-* The null hypothesis is $H_0: \theta = 0$ (i.e., the two CTAs produce the same sign-up rate)
-* the alternative hypothesis is $H_1: \theta \neq 0$ (a real difference exists).
+The idea behind hypothesis testing is to ask: *if there were truly no difference between the two CTAs, how surprising would our data be?* We formalize this by setting up two competing hypotheses:
+
+* The **null hypothesis** is $H_0: \theta = 0$ (i.e., the two CTAs produce the same sign-up rate).
+* The **alternative hypothesis** is $H_1: \theta \neq 0$ (a real difference exists).
+
 The goal is to assess whether the data provide enough evidence to reject $H_0$.
 
 To do this, we convert our estimate $\hat\theta$ into a test statistic by standardizing it:
@@ -180,10 +223,10 @@ z = \frac{\hat\theta - 0}{SE(\hat\theta)}
 $$
 
 The logic of this step follows directly from the CLT:
+
 1. By the CLT, we know that $\hat\theta$ is approximately Normal for large samples. Under $H_0$, the mean of that distribution is 0 because if there is no true difference, our estimator should be centred at zero.
 2. When we divide a Normal random variable by its standard deviation, we get a standard Normal $N(0,1)$. So under $H_0$, $z \;\dot\sim\; N(0,1)$.
-3. This means we know the distribution of our test statistic under the null, which is exactly what we need to compute a p-value. We can calculate exactly how surprising our observed value is. That probability is the
-p-value.
+3. This means we know the distribution of our test statistic under the null, which is exactly what we need to compute a p-value. We can calculate exactly how surprising our observed value is. That probability is the p-value.
 
 This is sometimes called a t-test. The classical t-test was derived for data drawn from a Normal distribution with unknown variance; in that setting, the standardized ratio follows an exact t-distribution rather than a standard Normal. Our data are Bernoulli, not Normal, so no such exact result applies: the Normality of our test statistic is an approximation that comes from the CLT. What we are really doing is closer to a z-test. In practice, for the sample sizes we are working with, the t-distribution and the standard Normal are nearly indistinguishable, so the distinction rarely affects conclusions. But it is worth understanding where the approximation comes from.
 
@@ -206,7 +249,11 @@ print(f"Test statistic (z):   {z_stat:.4f}")
 print(f"P-value:              {p_value:.4f}")
 ```
 
-With a p-value well below the conventional threshold of 0.05, we have strong evidence against the null hypothesis. In other words, a difference as large as the one we observed would be very unlikely to arise by chance alone if the two CTAs truly performed equally. We reject $H_0$​ and conclude that CTA A and CTA B do not produce the same sign-up rate: consistent with the ground truth we set when simulating the data.
+With a p-value of about **0.17** — well *above* the conventional threshold of 0.05 — we **fail to reject** the null hypothesis. A difference as large as the one we observed (about 2.5 percentage points) would arise by chance roughly 17% of the time even if the two CTAs were truly equivalent, so we don't have enough evidence to conclude that the CTAs differ.
+
+::: {.callout-warning title="Power matters"}
+It's worth pausing on this result, because it might feel surprising. We *built* this simulation with a true difference of $\theta = 0.04$, and yet our test failed to detect it. *Failing to reject the null is not the same as proving the null is true*: with only $n = 1{,}000$ per group and a true effect of 4 percentage points, the test simply doesn't have enough **statistical power** to reliably detect a difference this small. With a larger sample (or a bigger true effect), the same procedure would produce a smaller p-value and a clearer conclusion. In practice, this is why power calculations are so important *before* running an A/B test: collecting too little data means even a real effect can hide in the noise.
+:::
 
 ## The T-Test as a Regression
 It turns out that the two-sample test we just ran is mathematically equivalent to a simple linear regression. Understanding this connection is useful because it means the same machinery --- and the same software --- that you use for regression can also perform hypothesis tests, and it generalizes naturally to more complex experimental designs.
@@ -219,6 +266,7 @@ Y_i = \beta_0 + \beta_1 D_i + \varepsilon_i
 $$
 
 These coefficients have clean interpretations:
+
 1. $\beta_0$ is the expected value of $Y_i$ when $D_i = 0$ --- i.e., the mean of the B group, which estimates $\pi_B$.
 2. $\beta_0 + \beta_1$ is the expected value of $Y_i$ when $D_i = 1$ --- i.e., the mean of the A group, which estimates $\pi_A$.
 3. Therefore $\beta_1 = \pi_A - \pi_B = \theta$, and the OLS estimate $\hat\beta_1$ is numerically identical to $\hat\theta = \bar{X}_A - \bar{X}_B$.
@@ -238,27 +286,32 @@ print(model.summary())
 The coefficient on $D_i$​ — that is, $\hat\beta_1$​ — matches the point estimate of $\hat\theta$ we computed in the previous section. The t-statistic and p-value are likewise very close to those from the two-sample test, with any small discrepancy arising from a difference in how the standard error is calculated: standard OLS assumes a single pooled variance across both groups, while the two-sample formula we used earlier allows the variance to differ between groups. For balanced samples with similar proportions, the two approaches give nearly identical results.
 
 This equivalence matters because of its flexibility. In the simple two-group case, both approaches give the same answer. But the regression framework makes it straightforward to go further:
-the regression framework makes it easy to add controls/co-variates to improve precision, interaction terms, or additional treatment arms, all while producing the same inference in the simple case and within the same modelling language and using the same software. The two-sample test is a special case; regression is the general tool.
+the regression framework makes it easy to add controls/co-variates to improve precision, interaction terms, or additional treatment arms, all while producing the same inference in the simple case and within the same modelling language and using the same software.
+
+::: {.callout-tip title="Key Takeaway"}
+The two-sample test is a special case; regression is the general tool.
+:::
 
 ## The Problem with Peeking
 So far we have assumed that the experiment runs to completion before we look at the results. But what if your boss is impatient? Rather than waiting for all 1,000 visitors to be assigned to each group, she wants to check the results after every 100 visitors per group - peeking at the results after 100, 200, 300, ..., up to 1,000 visitors per group (10 tests in total). If any of those tests comes back significant at the $\alpha = 0.05$ level, she wants to declare a winner and stop the experiment early.
 
 This is a natural impulse, but it is statistically problematic. A single test at $\alpha = 0.05$ has a 5% chance of a false positive (rejecting $H_0$ when it is actually true). But when you conduct multiple tests on accumulating data, each peek is another opportunity to get a false positive. The overall probability of at least one false rejection across all the peeks is much higher than 5%. This inflation of the Type I error rate is sometimes called the **multiple comparisons problem**, and it is one of the most common ways that A/B tests go wrong in practice.
 
-Let's demonstrate this with a simulation where we simulate 10,000 experiments in a world where the null hypothesis is true — that is, where both CTAs produce identical sign-up rates (to see just how bad the problem can get):
+Let's demonstrate this with a simulation where we simulate 10,000 experiments in a world where the null hypothesis is true — that is, where both CTAs produce identical sign-up rates (to see just how bad the problem can get). For each experiment we record *which* peek (if any) caused the boss to declare a false winner, so we can also track how the false-positive rate accumulates with every peek:
 ```{python}
 pi_null = 0.20
 n_per_group = 1000
 peek_interval = 100
 peeks = np.arange(peek_interval, n_per_group + 1, peek_interval)
 n_experiments = 10000
-false_positives = 0
 
-for _ in range(n_experiments):
+# Record at WHICH peek the rejection happened (-1 if no rejection at all)
+rejection_peek = np.full(n_experiments, -1)
+
+for i in range(n_experiments):
     obs_A = rng.binomial(1, pi_null, n_per_group)
     obs_B = rng.binomial(1, pi_null, n_per_group)
-    rejected = False
-    for n in peeks:
+    for j, n in enumerate(peeks):
         mean_A = obs_A[:n].mean()
         mean_B = obs_B[:n].mean()
         se = np.sqrt(
@@ -268,16 +321,76 @@ for _ in range(n_experiments):
         z = (mean_A - mean_B) / se
         p = 2 * (1 - stats.norm.cdf(abs(z)))
         if p < 0.05:
-            rejected = True
+            rejection_peek[i] = j
             break
-    if rejected:
-        false_positives += 1
 
-empirical_fpr = false_positives / n_experiments
+empirical_fpr = np.mean(rejection_peek >= 0)
 print(f"Nominal false positive rate (single test): 0.0500")
 print(f"Empirical false positive rate (peeking):   {empirical_fpr:.4f}")
 ```
 
 The result is striking. While a single test at the end of the experiment would produce a false positive just 5% of the time, the peeking strategy produces false positives at a rate far exceeding that — typically somewhere around 20–25%. That means that roughly one in four or five experiments would declare a winner even when neither CTA is actually better, simply as a consequence of looking too early and too often.
 
-The practical implication is important: if you commit to a sample size in advance and test only once at the end, your false positive rate is controlled at alpha. But if you peek repeatedly and stop as soon as you see something significant, you are essentially giving yourself multiple chances to get lucky. The result is a testing procedure that produces far more spurious findings than advertised — and in a business context, that means making product decisions based on noise rather than signal.
+We can also visualize how the false-positive rate accumulates as the boss peeks more and more times:
+```{python}
+#| fig-cap: "Cumulative false-positive rate as the number of peeks increases under the null hypothesis. The dashed line shows the nominal α = 0.05 that a single test would achieve."
+#| fig-alt: "Line chart with markers showing the cumulative false-positive rate rising from about 5% after one peek up to roughly 19-20% after ten peeks, with a horizontal dashed reference line at 0.05."
+cumulative_fpr = [
+    np.mean((rejection_peek >= 0) & (rejection_peek <= k))
+    for k in range(len(peeks))
+]
+
+plt.figure(figsize=(10, 5))
+plt.plot(range(1, len(peeks) + 1), cumulative_fpr,
+         marker="o", color="steelblue", linewidth=2,
+         label="Cumulative FPR")
+plt.axhline(0.05, color="crimson", linestyle="--",
+            linewidth=1.5, label="Nominal α = 0.05")
+plt.xlabel("Number of peeks")
+plt.ylabel("Cumulative false-positive rate")
+plt.title("How peeking inflates the false-positive rate")
+plt.xticks(range(1, len(peeks) + 1))
+plt.ylim(0, max(cumulative_fpr) * 1.15)
+plt.legend()
+plt.tight_layout()
+plt.show()
+```
+
+After a single peek, the false-positive rate sits right where it should — close to 5%. But each additional peek adds another opportunity to get unlucky, and by the tenth peek the cumulative rate has climbed to roughly four times the nominal level. The shape of the curve is also instructive: most of the damage happens in the first few peeks, but it never stops growing.
+
+::: {.callout-tip title="Key Takeaway"}
+If you commit to a sample size in advance and test only once at the end, your false positive rate is controlled at alpha. But if you peek repeatedly and stop as soon as you see something significant, you are essentially giving yourself multiple chances to get lucky.
+:::
+
+The result is a testing procedure that produces far more spurious findings than advertised — and in a business context, that means making product decisions based on noise rather than signal.
+
+
+## What We Learned
+
+::: {layout-ncol=3}
+
+::: {.callout-note title="LLN" appearance="simple"}
+More data → better estimates
+:::
+
+::: {.callout-note title="Bootstrap" appearance="simple"}
+Resampling estimates uncertainty
+:::
+
+::: {.callout-note title="CLT" appearance="simple"}
+Sampling distributions become Normal
+:::
+
+::: {.callout-note title="Hypothesis Test" appearance="simple"}
+Standardize to get a p-value
+:::
+
+::: {.callout-note title="Regression" appearance="simple"}
+T-test = simple linear regression
+:::
+
+::: {.callout-note title="Peeking" appearance="simple"}
+Multiple tests inflate false positives
+:::
+
+:::
