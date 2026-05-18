@@ -58,7 +58,7 @@ GOLD  = "#F59E0B"
 GREEN = "#10B981"
 RED   = "#EF4444"
 
-df = pd.read_csv("blueprinty.csv")
+df = pd.read_csv("data/blueprinty.csv")
 df.head()
 ```
 
